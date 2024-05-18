@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Robotolight.woff2);
+    font-style: 400;
+    font-weight: 14px;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Robotobold.woff2);
+    font-style: 900;
+    font-weight: 14px;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Robotomedium.woff2);
+    font-style: 600;
+    font-weight: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}
+
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-zel: #939878;
+    --color-orane: #CF6F49;
+    --color-bel: #F5F5F2;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--color-black);
+    background-color: var(--color-orane);
+    padding: 14px 15px;
+    font-family: "Roboto";
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    color: var(--color-zel);
+    transition: all 0.7s;
+    background-color: var(--color-white);
+}
+
+header>div {
+    background-color: var(--color-zel);
+    color: var(--color-white);
+    font-family: 'Roboto';
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr 24px;
+    padding: 11px 9px;
+    align-items: center;
+}
+
+header div p {
+    display: grid;
+    column-gap: 8px;
+    justify-self: center;
+}
+
+header section {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    padding: 30px 8vw;
+    align-items: center;
+}
+
+header section>a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 24px;
+    color: #22202E;
+}
+
+header section nav {
+    justify-self: center;
+}
+
+header section ul {
+    display: flex;
+    list-style-type: none;
+    column-gap: 4vw;
+}
+
+header section ul a {
+    text-decoration: none;
+    color: var(--color-nav-linke);
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+header section div.button a.btn1 {
+    text-decoration: none;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    padding: 14px 10px;
+    font-family: "Roboto";
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+header section div.button a.btn1:hover{
+    color: var(--color-zel);
+    transition: all 0.7s;
+    background-color: var(--color-orane);
+}
+
+main section.started{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 36vw;
+    column-gap: 16px;
+}
+
+main section.started img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section.started div{
+    display: grid;
+    background-color: var(--color-bel);
+    padding: 5vw;
+    color: var(--color-black);
+    grid-template-rows: max-content;
+    row-gap: 12px;
+}
+
+main section.started div a{
+    align-self: end;
+    justify-self: start;
+    background-color: var(--color-nav-links);
+}
+
+main section.started div h2{
+    font-family: "Roboto";
+    font-weight: normal;
+    font-size: 30px;
+}
+
+main section.started div span{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 20px;
+}
