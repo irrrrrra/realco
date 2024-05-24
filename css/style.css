@@ -260,7 +260,7 @@ main section.works ul li{
     row-gap: 24px;
     border: 1px solid #F2F2F0;
     padding: 3vw;
-    border-radius: 6px;
+    border-radius: 16px;
 }
 
 main section.works ul li h3{
@@ -283,46 +283,79 @@ main section.works ul li p{
 }
 
 main section.best {
+    padding: 6vw 8vw;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 5fr 6fr;
     grid-template-rows: 600px;
-    position: relative;
-    padding: 12vw 0;
+    align-items: center;
 }
 
 main section.best div{
     display: grid;
-    grid-template-rows: repeat(4, min-content);
-    align-self: center;
-    padding: 0 14vw 0 8vw;
-    row-gap: 20px;
+    padding-right: 12vw;
+    row-gap: 30px;
 }
 
 main section.best div>span{
     background-color: #E7E8E3;
     padding: 4px 10px;
     justify-self: start;
-    border-radius: 14px;
+    border-radius: 16px;
     color: #2A2C1F;
 }
 
-main section.best h1{
-    font-size: 56px;
-    padding: 20px 0;
-    color: #2A2C1F;
+main section.best h2{
+    font-size: 48px;
+    font-weight: bold;
 }
 
 main section.best p{
-    font-size: 20px;
+    line-height: 1.7;
     color: #65665C;
 }
 
-main section.best form{
+main section.best .but {
+    text-decoration: none;
+    color: #2A2C1F;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px;
-    justify-items: start;
-    column-gap: 20px;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 24px;
+}
+
+main section.best .but .explore{
+    padding: 14px 25px;
+    border: 1px solid #E7E8E3;
+    border-radius: 6px;
+}
+
+main section.best .but.explore:hover{
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+}
+
+
+main section.best .but .contact{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 6px;
+}
+
+main section.best .but .contact:hover{
+    color: var(--color-accent);
+}
+
+main section.best .but .contact svg{
+    width: 12px;
+}
+
+
+main section.best form{
+    text-decoration: none;
+    color: #2A2C1F;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 24px;
 }
 
 main section.best img{
@@ -332,22 +365,182 @@ main section.best img{
     border-radius: 16px;
 }
 
-main section.best form .one {
-    display: flex;
-    background-color: #fff;
+main section.fast {
+    padding: 6vw 8vw;
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    grid-template-rows: 600px;
+    align-items: center;
+}
+
+main section.fast .vse{
+    display: grid;
+    padding: 0 7vw 0 5vw ;
+    row-gap: 30px;
+}
+
+main section.fast div>span{
+    background-color: #E7E8E3;
+    padding: 4px 10px;
+    justify-self: start;
+    border-radius: 16px;
+    color: #2A2C1F;
+}
+
+main section.fast h2{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+main section.fast p{
+    line-height: 1.7;
+    color: #65665C;
+}
+
+main section.fast .but {
+    text-decoration: none;
+    color: #2A2C1F;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 24px;
+}
+
+main section.fast .but .explore{
+    padding: 14px 25px;
     border: 1px solid #E7E8E3;
     border-radius: 6px;
-    width: 100%;
-    padding: 0 45px;
-    align-items: center;
-    text-align: center;
 }
 
-main section.best form .two {
-    display: flex;
+main section.fast .but.explore:hover{
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+}
+
+
+main section.fast .but .contact{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 6px;
+}
+
+main section.fast .but .contact:hover{
+    color: var(--color-accent);
+}
+
+main section.fast .but .contact svg{
+    width: 12px;
+}
+
+main section.fast img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+main section.fast ul{
+    padding-top: 40px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3vw;
+}
+
+main section.fast ul li{
+    display: grid;
+    grid-template-rows: 50px min-content max-content;
+    justify-items: start;
+    row-gap: 24px;
+}
+
+main section.fast ul li h3{
+    font-size: 24px;
+}
+
+main section.fast ul li p{
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    color: #65665C;
+}
+
+main section.houses {
+    padding: 6vw 8vw;
+    align-items: center;
+    background-color: #F5F5F2;
+}
+
+main section.houses .house {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 600px;
+    align-items: center;
+}
+
+main section.houses .but {
+    text-decoration: none;
+    color: #2A2C1F;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 24px;
+}
+
+main section.houses .but .explore{
+    background-color: #fff;
+    padding: 14px 25px;
+    border: 1px solid #E7E8E3;
     border-radius: 6px;
-    width: 100%;
-    padding: 0 20px;
-    align-items: center;
 }
 
+main section.houses .but.explore:hover{
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+}
+
+
+main section.houses .but .contact{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 6px;
+}
+
+main section.houses .but .contact:hover{
+    color: var(--color-accent);
+}
+
+main section.houses .but .contact svg{
+    width: 12px;
+}
+
+main section.houses>span{
+    background-color: #E7E8E3;
+    padding: 4px 10px;
+    justify-self: center;
+    border-radius: 16px;
+    color: #2A2C1F;
+}
+
+main section.houses .house img {
+    width: 405px;
+    height: 268px;
+    object-fit: cover;
+}
+
+main section.houses article {
+    display: grid;
+    background-color: #fff;
+    padding: 1vw;
+}
+
+main section.houses h2{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+main section.houses p{
+
+    line-height: 1.7;
+    color: #65665C;
+}
