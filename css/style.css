@@ -467,15 +467,18 @@ main section.fast ul li p{
 
 main section.houses {
     padding: 6vw 8vw;
-    align-items: center;
     background-color: #F5F5F2;
+    display: grid;
+    justify-items: center;
+    position: relative;
 }
 
 main section.houses .house {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 600px;
     align-items: center;
+    gap: 32px;
+    padding: 4vw;
 }
 
 main section.houses .but {
@@ -531,16 +534,60 @@ main section.houses .house img {
 main section.houses article {
     display: grid;
     background-color: #fff;
-    padding: 1vw;
+    border-radius: 5%;
 }
+   
 
 main section.houses h2{
     font-size: 48px;
     font-weight: bold;
 }
 
-main section.houses p{
+main section.houses .house article>div {
+    display: grid;
+    row-gap: 8px;
+    padding: 1vw;
+}
 
+
+main section.houses .house article>div>div {
+    display: grid;
+    row-gap: 16px;
+
+}
+
+main section.houses .house article>div>div span {
+    font-weight: 600;
+}
+
+main section.houses ul {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    list-style-type: none;
+    column-gap: 20px;
+}
+
+main section.houses ul li{
     line-height: 1.7;
     color: #65665C;
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    align-items: center;
+    column-gap: 8px;
+}
+
+main section.houses>svg {
+    position: absolute;
+}
+
+main section.houses>svg:nth-child(1) {
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+main section.houses>svg:nth-child(2) {
+    bottom: 0;
+    left: 0;
+    transform: rotate(-90deg);
 }
